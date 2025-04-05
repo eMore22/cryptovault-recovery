@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CryptoVault Recovery</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Inter', sans-serif;
+      background: #0d0d0d;
+      color: #fff;
+      line-height: 1.6;
+    }
+    header {
+      background-color: #111;
+      padding: 20px;
+      text-align: center;
+      border-bottom: 1px solid #222;
+    }
+    header h1 {
+      font-size: 2rem;
+      color: #00ffcc;
+    }
+    .premium-badge {
+      background: #00cc99;
+      color: #000;
+      padding: 8px 16px;
+      font-weight: bold;
+      border-radius: 5px;
+      margin-top: 10px;
+      display: inline-block;
+    }
+    .hero {
+      padding: 80px 20px;
+      text-align: center;
+      background: url('https://images.unsplash.com/photo-1620113586006-b47c40c6a204?auto=format&fit=crop&w=1350&q=80') no-repeat center center/cover;
+      position: relative;
+    }
+    .hero::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.7);
+    }
+    .hero h2, .hero p, .cta {
+      position: relative;
+      z-index: 1;
+    }
+    .hero h2 {
+      font-size: 2.5rem;
+      margin-bottom: 20px;
+    }
+    .hero p {
+      font-size: 1.2rem;
+      color: #ccc;
+      max-width: 600px;
+      margin: 0 auto;
+    }
+    .cta {
+      margin-top: 40px;
+    }
+    .cta a {
+      display: inline-block;
+      padding: 12px 24px;
+      background: #00ffcc;
+      color: #000;
+      font-weight: 600;
+      border-radius: 5px;
+      text-decoration: none;
+      transition: transform 0.3s ease;
+    }
+    .cta a:hover {
+      transform: scale(1.05);
+      background: #00cc99;
+    }
+    .section {
+      padding: 60px 20px;
+      max-width: 900px;
+      margin: 0 auto;
+    }
+    .section h3 {
+      font-size: 1.8rem;
+      margin-bottom: 20px;
+      color: #00ffcc;
+    }
+    .section ul {
+      list-style-type: square;
+      padding-left: 20px;
+    }
+    .section ul li {
+      margin-bottom: 10px;
+      color: #ccc;
+    }
+    .testimonials {
+      background: #111;
+      padding: 60px 20px;
+      text-align: center;
+    }
+    .testimonials h3 {
+      font-size: 1.8rem;
+      margin-bottom: 40px;
+      color: #00ffcc;
+    }
+    .testimonial {
+      max-width: 700px;
+      margin: 0 auto 30px;
+      font-style: italic;
+      color: #aaa;
+    }
+    .form-section {
+      background: #111;
+      padding: 60px 20px;
+      text-align: center;
+    }
+    .form-section h3 {
+      font-size: 1.8rem;
+      margin-bottom: 20px;
+      color: #00ffcc;
+    }
+    form {
+      max-width: 500px;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+    input, textarea {
+      padding: 12px;
+      border-radius: 5px;
+      border: none;
+      font-size: 1rem;
+    }
+    button {
+      padding: 12px;
+      background: #00ffcc;
+      color: #000;
+      font-weight: bold;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: transform 0.3s ease;
+    }
+    button:hover {
+      transform: scale(1.05);
+      background: #00cc99;
+    }
+    .anti-scam-section {
+      background: #111;
+      padding: 60px 20px;
+      text-align: center;
+    }
+    .anti-scam-section h3 {
+      font-size: 1.8rem;
+      margin-bottom: 20px;
+      color: #00ffcc;
+    }
+    .anti-scam-section input {
+      padding: 12px;
+      font-size: 1rem;
+      border-radius: 5px;
+      border: none;
+      width: 300px;
+      margin-bottom: 15px;
+    }
+    footer {
+      background-color: #111;
+      text-align: center;
+      padding: 30px 20px;
+      font-size: 0.9rem;
+      color: #777;
+      border-top: 1px solid #222;
+    }
+    footer a {
+      color: #00ffcc;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+  <header data-aos="fade-down">
+    <h1>CryptoVault Recovery</h1>
+    <span class="premium-badge">Trusted by Experts</span>
+  </header>
+
+  <section class="hero" data-aos="fade-up">
+    <h2>Lost Access to Your Wallet?</h2>
+    <p>We specialize in crypto wallet recovery for Bitcoin, Ethereum, and more. Fast, secure, and professional. Your funds might not be gone — just out of reach.</p>
+    <div class="cta">
+      <a href="mailto:support@cryptovaultrecovery.com">Contact Us Now</a>
+    </div>
+  </section>
+
+  <section class="section" data-aos="fade-up">
+    <h3>Our Services</h3>
+    <ul>
+      <li>Lost password recovery for hardware & software wallets</li>
+      <li>Assistance with corrupted wallet files</li>
+      <li>Seed phrase recovery (with partial data)</li>
+      <li>Multi-sig and smart contract wallet support</li>
+      <li>Recover your scammed cryptocurrency</li>
+    </ul>
+  </section>
+
+  <section class="anti-scam-section" data-aos="fade-up">
+    <h3>Anti-Scam Checker</h3>
+    <input type="text" placeholder="Enter wallet/website address" />
+    <button>Check Now</button>
+  </section>
+
+  <section class="section" data-aos="fade-up">
+    <h3>Why Choose Us</h3>
+    <ul>
+      <li>100% Confidential and Secure</li>
+      <li>Trusted by thousands globally</li>
+      <li>No recovery, no fee — simple as that</li>
+      <li>24/7 support via email and Telegram</li>
+    </ul>
+  </section>
+
+  <section class="testimonials" data-aos="fade-up">
+    <h3>What Our Clients Say</h3>
+    <div class="testimonial">“I thought I'd lost everything. These guys got my ETH wallet back in under 48 hours.” – Amanda T.</div>
+    <div class="testimonial">“I was skeptical at first, but the process was smooth and professional. Got my BTC back!” – John M.</div>
+    <div class="testimonial">“They recovered my scammed tokens with zero upfront fees. Highly recommend.” – Felix B.</div>
+  </section>
+
+  <section class="form-section" data-aos="fade-up">
+    <h3>Get in Touch</h3>
+    <form action="mailto:support@cryptovaultrecovery.com" method="post" enctype="text/plain">
+      <input type="text" name="name" placeholder="Your Name" required />
+      <input type="email" name="email" placeholder="Your Email" required />
+      <textarea name="message" rows="5" placeholder="Describe your issue..." required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <footer data-aos="fade-up">
+    <p>&copy; 2025 CryptoVault Recovery. All rights reserved. | <a href="mailto:support@cryptovaultrecovery.com">Email Us</a></p>
+  </footer>
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+
+  <!-- Tawk.to Live Chat Widget -->
+  <script type="text/javascript">
+    var Tawk_API = Tawk_API || {}, Tawk_LoadStart = new Date();
+    (function() {
+      var s1 = document.createElement("script"), s0 = document.getElementsByTagName("script")[0];
+      s1.async = true;
+      s1.src = 'https://embed.tawk.to/5e5a9a5b0e1f2a7f358b6bfe/default';
+      s1.charset = 'UTF-8';
+      s1.setAttribute('crossorigin', '*');
+      s0.parentNode.insertBefore(s1, s0);
+    })();
+  </script>
+</body>
+</html>
